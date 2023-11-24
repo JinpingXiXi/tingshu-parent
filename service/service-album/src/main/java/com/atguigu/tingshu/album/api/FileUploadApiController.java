@@ -1,6 +1,7 @@
 package com.atguigu.tingshu.album.api;
 
 import com.atguigu.tingshu.album.config.MinioConstantProperties;
+import com.atguigu.tingshu.album.service.FileService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,8 +14,8 @@ public class FileUploadApiController {
 
         @Autowired
         private MinioConstantProperties minioConstantProperties;
-        
-        
+        @Autowired
+        private FileService fileService;
 
 
 }
