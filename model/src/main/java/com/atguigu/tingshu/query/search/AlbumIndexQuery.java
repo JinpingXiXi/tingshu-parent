@@ -1,5 +1,7 @@
 package com.atguigu.tingshu.query.search;
 
+import com.atguigu.tingshu.vo.album.AlbumListVo;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
@@ -30,4 +32,5 @@ public class AlbumIndexQuery {
 
 	private Integer pageNo = 1;//分页信息
 	private Integer pageSize = 10;
+	
 }
